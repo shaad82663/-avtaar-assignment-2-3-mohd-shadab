@@ -118,5 +118,16 @@ node index.js
 ```
 
 ## Output
-[Output-1](https://res.cloudinary.com/shaad82663/image/upload/v1636696214/Avtaar-Internship-Assisnments/OP1_jglvtb.png)
-[Output-2](https://res.cloudinary.com/shaad82663/image/upload/v1636696214/Avtaar-Internship-Assisnments/OP2_ro2vfm.png)
+### Assignment-2
+[Output-1](https://res.cloudinary.com/shaad82663/image/upload/v1637232316/Avtaar-Internship-Assisnments/Q-1_azz5ng.png)
+[Output-2](https://res.cloudinary.com/shaad82663/image/upload/v1637232316/Avtaar-Internship-Assisnments/Q-2_jujqdh.png)
+
+### Assignment-3
+[Output-1: 5 users-screenshot](https://res.cloudinary.com/shaad82663/image/upload/v1637232766/Avtaar-Internship-Assisnments/Screenshot_223_syyhwa.png)
+[Output-1: 5 users-txt-file](https://res.cloudinary.com/shaad82663/raw/upload/v1637232980/Avtaar-Internship-Assisnments/o-1_gx7ifq.txt)
+
+[Output-2: 20 events-screenshot](https://res.cloudinary.com/shaad82663/image/upload/v1637232546/Avtaar-Internship-Assisnments/Screenshot_222_yb2ues.png)
+[Output-2: 20 events-txt-file](https://res.cloudinary.com/shaad82663/raw/upload/v1637232980/Avtaar-Internship-Assisnments/o-2_ke6qiz.txt)
+
+
+
