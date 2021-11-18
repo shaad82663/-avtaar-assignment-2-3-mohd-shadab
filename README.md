@@ -39,11 +39,20 @@ The REST API used in the code is described below.
 
      http://localhost:4000/api/v1/user/new
 
+#### Sample Input (JSON)
+  
+    {
+    "name" : "Mohd Shadab",
+    "gender" : "MALE",
+    "email" : "shaad82663@gmail.com"
+    }
+    
 ### Response
   
     HTTP/1.1 200 OK
     success : true
     user : {...user}
+    
     
 ## Insert into Event table
 
@@ -53,12 +62,23 @@ The REST API used in the code is described below.
 
      http://localhost:4000/api/v1/event/new  
 
+
+#### Sample Input (JSON)
+  
+    {
+    "name" : "Avtaar Fest",
+    "occurance" : "WEEKLY",
+    "uid" : "6193d55e635304f71aa4ea55"
+    "startDate" : "2021-03-09",
+    "endDate" : ""
+    }
+
 ### Response
   
         HTTP/1.1 200 OK
         success : true,
         event : {...event}
-  
+    
 ## Get all the events for today
 
 ### Request
@@ -66,6 +86,10 @@ The REST API used in the code is described below.
 `GET /api/v1/events/today`
 
      http://localhost:4000/api/v1/events/today  
+     
+### Sample Input (JSON)
+  
+    {} //NO INPUT REQUIRED         
 
 ### Response
   
@@ -73,6 +97,8 @@ The REST API used in the code is described below.
         success : true,
         count : events.length,
         events : [...events]
+    
+
         
 ## Get all users for list of uid
 
@@ -82,26 +108,40 @@ The REST API used in the code is described below.
 
      http://localhost:4000/api/v1/users
 
+#### Sample Input (JSON)
+  
+    {
+    "uid" : ["6193d55e635304f71aa4ea55", "6193d701f37175bbaa345a0f"]
+    } 
+
 ### Response
   
          HTTP/1.1 200 OK
          success : true,
          users : {...users}
+                 
          
-## Get all users for list of uid
+## Get the all the events for given uid
 
 ### Request
 
 `GET /api/v1/events`
 
      http://localhost:4000/api/v1/events
+     
+#### Sample Input (JSON)
+  
+    {
+    "uid" : "6193d55e635304f71aa4ea55"
+    } 
 
 ### Response
   
          HTTP/1.1 200 OK
          success : true,
          count : eventsForUid.length,
-         eventsForUid : {...eventsForUid}      
+         eventsForUid : {...eventsForUid}   
+                   
          
 ## Get all events for the next 7 days
 
@@ -110,6 +150,10 @@ The REST API used in the code is described below.
 `GET /api/v1/events/week`
 
      http://localhost:4000/api/v1/events/week
+     
+#### Sample Input (JSON)
+  
+    {} //NO INPUT REQUIRED      
      
 ### Response
   
