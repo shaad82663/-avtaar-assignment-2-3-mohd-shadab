@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { newUser, getUsers,  getUser} = require('../controllers/userController');
+const { newUser, getUsers} = require('../controllers/userController');
 
 //Base URL : /api/v1
 router.route("/user/new").post(newUser);
