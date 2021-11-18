@@ -1,4 +1,7 @@
-# avtaar-assignment-2-3-mohd-shadab.
+### NOTE :
+As the assignments were part of each other and mentor suggested to do both the assignments simultaneously so both the assignments are submitted in form of one repo. The github repo link provided in assignment 2 and 3 are same. It is done to ensure that both the assignments will be marked as done without any confusion.
+
+# avtaar-assignment-2-3-mohd-shadab
 
 ##  Steps to run the code (Windows OS)
 
@@ -52,6 +55,7 @@ The REST API used in the code is described below.
 
 ### Response
   
+        HTTP/1.1 200 OK
         success : true,
         event : {...event}
   
@@ -74,16 +78,15 @@ The REST API used in the code is described below.
 
 ### Request
 
-`GET /api/v1/events`
+`GET /api/v1/users`
 
-     http://localhost:4000/api/v1/events
+     http://localhost:4000/api/v1/users
 
 ### Response
   
          HTTP/1.1 200 OK
          success : true,
-         count : eventsForUid.length,
-         eventsForUid : {...eventsForUid} 
+         users : {...users}
          
 ## Get all users for list of uid
 
@@ -98,11 +101,23 @@ The REST API used in the code is described below.
          HTTP/1.1 200 OK
          success : true,
          count : eventsForUid.length,
-         eventsForUid : {...eventsForUid}          
+         eventsForUid : {...eventsForUid}      
+         
+## Get all events for the next 7 days
 
-## Features
+### Request
 
-- Provides the unique ID to each user
+`GET /api/v1/events/week`
+
+     http://localhost:4000/api/v1/events/week
+     
+### Response
+  
+         HTTP/1.1 200 OK
+        success : true,
+        count : events.length,
+        events : {...events}    
+
 
 ## Installation
 
@@ -114,7 +129,7 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 cd <foler path>
 npm install
-node index.js
+npm run start
 ```
 
 ## Output
