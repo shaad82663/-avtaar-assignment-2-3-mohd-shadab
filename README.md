@@ -87,7 +87,7 @@ The REST API used in the code is described below.
 
      http://localhost:4000/api/v1/events/today  
      
-### Sample Input (JSON)
+#### Sample Input (JSON)
   
     {} //NO INPUT REQUIRED         
 
