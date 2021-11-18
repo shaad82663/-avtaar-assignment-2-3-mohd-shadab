@@ -39,7 +39,7 @@ The REST API used in the code is described below.
 
      http://localhost:4000/api/v1/user/new
 
-#### Sample Input (JSON)
+#### Sample Request (JSON)
   
     {
     "name" : "Mohd Shadab",
@@ -63,7 +63,7 @@ The REST API used in the code is described below.
      http://localhost:4000/api/v1/event/new  
 
 
-#### Sample Input (JSON)
+#### Sample Request (JSON)
   
     {
     "name" : "Avtaar Fest",
@@ -87,7 +87,7 @@ The REST API used in the code is described below.
 
      http://localhost:4000/api/v1/events/today  
      
-#### Sample Input (JSON)
+#### Sample Request (JSON)
   
     {} //NO INPUT REQUIRED         
 
@@ -108,7 +108,7 @@ The REST API used in the code is described below.
 
      http://localhost:4000/api/v1/users
 
-#### Sample Input (JSON)
+#### Sample Request (JSON)
   
     {
     "uid" : ["6193d55e635304f71aa4ea55", "6193d701f37175bbaa345a0f"]
@@ -129,7 +129,7 @@ The REST API used in the code is described below.
 
      http://localhost:4000/api/v1/events
      
-#### Sample Input (JSON)
+#### Sample Request (JSON)
   
     {
     "uid" : "6193d55e635304f71aa4ea55"
@@ -151,7 +151,7 @@ The REST API used in the code is described below.
 
      http://localhost:4000/api/v1/events/week
      
-#### Sample Input (JSON)
+#### Sample Request (JSON)
   
     {} //NO INPUT REQUIRED      
      
