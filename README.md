@@ -162,6 +162,8 @@ The REST API used in the code is described below.
         count : events.length,
         events : {...events}    
 
+### NOTE :
+Some error habdling functions/modules will be added later while working on front-end because those are PRODUCTION based errors which will seen by end user. For now all errors are DEVELOPMENT based i.e. in most of the cases, only a programmer can understand the errors.
 
 ## Installation
 
